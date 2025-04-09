@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #357ab8;
+        }
+
+        .full-width-btn {
+            width: calc(120px * 3 + 40px); /* 버튼 3개 + 간격 2개 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Select a Test</h1>
+
+<!-- 기존 3개 버튼 -->
+<div class="button-container">
+    <a href="/select/toeic" class="btn">TOEIC</a>
+    <a href="/select/teps" class="btn">TEPS</a>
+    <a href="/select/csat" class="btn">CSAT</a>
+</div>
+
+<!-- 실전 테스트 버튼 -->
+<a href="/select/test" class="btn full-width-btn">실전 테스트</a>
+
+</body>
+</html>

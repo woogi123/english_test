@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TEPS</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .sentence-box {
+        background-color: #ffffff;
+        width: 80%;
+        max-width: 800px;
+        padding: 30px;
+        border: 2px solid #4a90e2;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .answer-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+    }
+
+    .answer-input {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .submit-btn {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background-color: #357ab8;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 예문 표시 박스 -->
+<div class="sentence-box">
+  This is a sample sentence with a _____ for testing.
+</div>
+
+<!-- 사용자 입력 폼 -->
+<div class="answer-section">
+  <input type="text" class="answer-input" placeholder="정답을 입력하세요">
+  <button class="submit-btn">제출</button>
+</div>
+
+</body>
+</html>
